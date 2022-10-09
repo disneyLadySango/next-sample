@@ -2,8 +2,9 @@ import { chakra, Button, Image } from '@chakra-ui/react'
 import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next'
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
-import { FC, useEffect, useReducer } from 'react'
+import { ComponentProps, FC, useEffect, useReducer } from 'react'
 
+// @ts-ignore
 const DynamicModal = dynamic(() => import('@/src/components/Modal').then((res) => res.Modal))
 
 type Props = {}
